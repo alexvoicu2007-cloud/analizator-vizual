@@ -1,1 +1,38 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Eye Analyzer Learning Website</title>\n    <style>\n        body {\n            background-color: #add8e6;\n            font-family: Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n        }\n        h1 {\n            color: #004080;\n        }\n        .quiz {\n            max-width: 600px;\n            margin: auto;\n            padding: 20px;\n            background: white;\n            border-radius: 10px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n        }\n        .image {\n            max-width: 100%;\n            height: auto;\n            border-radius: 10px;\n        }\n        button {\n            background-color: #004080;\n            color: white;\n            border: none;\n            padding: 10px 20px;\n            cursor: pointer;\n            border-radius: 5px;\n            font-size: 16px;\n        }\n        button:hover {\n            background-color: #003366;\n        }\n    </style>\n</head>\n<body>\n    <h1>Welcome to the Eye Analyzer Learning Website</h1>\n    <div class="quiz">\n        <h2>Interactive Quiz Game</h2>\n        <p>Test your knowledge about eye care!</p>\n        <button onclick="startQuiz()">Start Quiz</button>\n        <div id="quizContent" style="display:none;">\n            <p><strong>Question:</strong> What is the function of the cornea?</p>\n            <button onclick="checkAnswer('A')">A) Protection</button>\n            <button onclick="checkAnswer('B')">B) Light Refraction</button>\n            <button onclick="checkAnswer('C')">C) Nutrition</button>\n            <div id="response"></div>\n        </div>\n    </div>\n    <img src="your-image-url-here.jpg" alt="Eye Image" class="image">\n    <script>\n        function startQuiz() {\n            document.getElementById('quizContent').style.display = 'block';\n        }\n        function checkAnswer(answer) {\n            const correctAnswer = 'B';\n            const responseDiv = document.getElementById('response');\n            if (answer === correctAnswer) {\n                responseDiv.innerHTML = '<p style="color: green;"><strong>Correct!</strong></p>';\n            } else {\n                responseDiv.innerHTML = '<p style="color: red;"><strong>Wrong Answer! Try Again.</strong></p>';\n            }\n        }\n    <\/script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizator Vizual</title>
+</head>
+<body>
+    <h1>Analizator Vizual</h1>
+
+    <section id="topografia">
+        <h2>Topografia</h2>
+        <img src="https://ibb.co/6csbzbGW" alt="Image for Topografia">
+    </section>
+
+    <section id="segmentul-central">
+        <h2>Segmentul Central</h2>
+        <img src="https://ibb.co/hkbfnSR" alt="Image for Segmentul Central">
+    </section>
+
+    <section id="defecte-optice">
+        <h2>Defecte Optice</h2>
+        <section id="astigmatism">
+            <h3>Astigmatism</h3>
+            <img src="https://ibb.co/FLsmr76z" alt="Image for Astigmatism">
+        </section>
+        <section id="myopia">
+            <h3>Myopia</h3>
+            <img src="https://ibb.co/N22nCgrK" alt="Image for Myopia vs Normal">
+        </section>
+        <section id="hypermetropy">
+            <h3>Hypermetropy</h3>
+            <img src="https://ibb.co/3DYNb9r" alt="Image for Normal Vision vs Hypermetropy">
+        </section>
+    </section>
+
+</body>
+</html>
