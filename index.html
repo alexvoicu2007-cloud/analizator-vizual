@@ -3,36 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analizator Vizual</title>
+    <title>Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6; /* baby blue */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        h1, h2, h3 {
+            color: #005580;
+        }
+        .chapter {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #005580;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .quiz {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #005580;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h1>Analizator Vizual</h1>
-
-    <section id="topografia">
-        <h2>Topografia</h2>
-        <img src="https://ibb.co/6csbzbGW" alt="Image for Topografia">
-    </section>
-
-    <section id="segmentul-central">
-        <h2>Segmentul Central</h2>
-        <img src="https://ibb.co/hkbfnSR" alt="Image for Segmentul Central">
-    </section>
-
-    <section id="defecte-optice">
-        <h2>Defecte Optice</h2>
-        <section id="astigmatism">
-            <h3>Astigmatism</h3>
-            <img src="https://ibb.co/FLsmr76z" alt="Image for Astigmatism">
-        </section>
-        <section id="myopia">
-            <h3>Myopia</h3>
-            <img src="https://ibb.co/N22nCgrK" alt="Image for Myopia vs Normal">
-        </section>
-        <section id="hypermetropy">
-            <h3>Hypermetropy</h3>
-            <img src="https://ibb.co/3DYNb9r" alt="Image for Normal Vision vs Hypermetropy">
-        </section>
-    </section>
-
+    <h1>Welcome to the Educational Website</h1>
+    <div class="chapter">
+        <h2>Chapter 1: Topografia</h2>
+        <img src="https://ibb.co/6csbzbGW" alt="Topografia">
+        <p>Content for Chapter 1 goes here.</p>
+    </div>
+    <div class="chapter">
+        <h2>Chapter 2: Segmentul Central</h2>
+        <img src="https://ibb.co/hkbfnSR" alt="Segmentul Central">
+        <p>Content for Chapter 2 goes here.</p>
+    </div>
+    <div class="chapter">
+        <h2>Chapter 3: Astigmatism</h2>
+        <img src="https://ibb.co/FLsmr76z" alt="Astigmatism">
+        <p>Content for Chapter 3 goes here.</p>
+    </div>
+    <div class="chapter">
+        <h2>Chapter 4: Myopia</h2>
+        <img src="https://ibb.co/N22nCgrK" alt="Myopia">
+        <p>Content for Chapter 4 goes here.</p>
+    </div>
+    <div class="chapter">
+        <h2>Chapter 5: Hypermetropy</h2>
+        <img src="https://ibb.co/3DYNb9r" alt="Hypermetropy">
+        <p>Content for Chapter 5 goes here.</p>
+    </div>
+    <div class="quiz">
+        <h2>Interactive Quiz</h2>
+        <p>Here will be an interactive quiz with 20 questions.</p>
+    </div>
 </body>
 </html>
